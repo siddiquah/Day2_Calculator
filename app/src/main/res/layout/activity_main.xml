@@ -65,13 +65,13 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="25dp"
-                android:src="@drawable/btn_0" />
+                android:src="@drawable/btn_module" />
 
             <ImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="25dp"
-                android:src="@drawable/btn_0" />
+                android:src="@drawable/btn_extra" />
 
         </LinearLayout>
 
