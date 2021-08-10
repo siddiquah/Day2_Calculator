@@ -32,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
+
         outPutTxt = findViewById(R.id.outPuttxt);
         inputTxt = findViewById(R.id.inputTxt);
 
@@ -54,26 +58,15 @@ public class MainActivity extends AppCompatActivity {
         btn_minus = findViewById(R.id.btn_minus);
         btn_multiplication = findViewById(R.id.btn_multiplication);
 
-//        Button switchBtn = findViewById(R.id.MainButton);
-//        switchBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, LightMainActivity.class);
-//                startActivity(intent);
-//                Toast.makeText(getApplicationContext(), "Light Mode", Toast.LENGTH_SHORT).show();
-//                finishAffinity();
-//            }
-//        });
-
-//        SwitchMaterial switch_theme = findViewById(R.id.switch_theme);
-//        switch_theme.setOnCheckedChangeListener((buttonView, isChecked) -> {
-//            if (isChecked) {
-//                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-//            }
-//            else {
-//                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-//            }
-//        });
+        SwitchMaterial switch_theme = findViewById(R.id.switch_theme);
+        switch_theme.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            }
+            else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            }
+        });
 
         btn_0.setOnClickListener(new View.OnClickListener() {
             @Override

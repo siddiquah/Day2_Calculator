@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#101010"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,7 +13,6 @@
         android:layout_above="@id/outPuttxt"
         android:gravity="right"
         android:paddingRight="20dp"
-        android:textColor="#BFBFBF"
         android:textSize="40dp" />
 
 
@@ -25,7 +23,6 @@
         android:layout_above="@id/buttons"
         android:gravity="right"
         android:paddingRight="20dp"
-        android:textColor="@color/white"
         android:textSize="60dp" />
 
 
@@ -61,20 +58,20 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_ac" />
+                android:src="@drawable/btn_ac"/>
 
             <ImageView
                 android:id="@+id/btn_module"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_module" />
+                android:src="@drawable/btn_0" />
 
             <ImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_extra" />
+                android:src="@drawable/btn_0" />
 
         </LinearLayout>
 
@@ -96,28 +93,28 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginEnd="25dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_7" />
+                android:src="@drawable/btn_7" />
 
             <ImageView
                 android:id="@+id/btn_8"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_8" />
+                android:src="@drawable/btn_8" />
 
             <ImageView
                 android:id="@+id/btn_9"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_9" />
+                android:src="@drawable/btn_9" />
 
             <ImageView
                 android:id="@+id/btn_multiplication"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_multiplication" />
+                android:src="@drawable/btn_multiplication" />
 
         </LinearLayout>
 
@@ -140,28 +137,28 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginEnd="25dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_4" />
+                android:src="@drawable/btn_4" />
 
             <ImageView
                 android:id="@+id/btn_5"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_5" />
+                android:src="@drawable/btn_5" />
 
             <ImageView
                 android:id="@+id/btn_6"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_6" />
+                android:src="@drawable/btn_6" />
 
             <ImageView
                 android:id="@+id/btn_minus"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_minus" />
+                android:src="@drawable/btn_minus" />
 
         </LinearLayout>
 
@@ -183,28 +180,28 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginEnd="25dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_1" />
+                android:src="@drawable/btn_1" />
 
             <ImageView
                 android:id="@+id/btn_2"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_2" />
+                android:src="@drawable/btn_2" />
 
             <ImageView
                 android:id="@+id/btn_3"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_3" />
+                android:src="@drawable/btn_3" />
 
             <ImageView
                 android:id="@+id/btn_plus"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_plus" />
+                android:src="@drawable/btn_plus" />
 
         </LinearLayout>
 
@@ -229,41 +226,44 @@
 <!--                android:layout_weight="1"-->
 <!--                android:text="Light" />-->
 
-<!--            <com.google.android.material.switchmaterial.SwitchMaterial-->
-<!--                android:id="@+id/switch_theme"-->
-<!--                android:layout_width="70dp"-->
-<!--                android:layout_height="70dp"-->
-<!--                android:layout_marginStart="25dp"-->
-<!--                android:layout_marginLeft="25dp"-->
-<!--                android:layout_marginEnd="25dp"-->
-<!--                android:layout_marginRight="25dp"/>-->
-            <ImageView
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_theme"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginEnd="25dp"
                 android:layout_marginRight="25dp"/>
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_marginStart="25dp"-->
+<!--                android:layout_marginLeft="25dp"-->
+<!--                android:layout_marginEnd="25dp"-->
+<!--                android:layout_marginRight="25dp"/>-->
+
             <ImageView
                 android:id="@+id/btn_0"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_0" />
+                android:src="@drawable/btn_0" />
 
             <ImageView
                 android:id="@+id/btn_dot"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_dot" />
+                android:src="@drawable/btn_dot" />
 
             <ImageView
                 android:id="@+id/btn_equal"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/btn_equal" />
+                android:src="@drawable/btn_equal" />
 
 
 
